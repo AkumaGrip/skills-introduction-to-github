@@ -3,45 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akuma Grip</title>
+    <title>Dojo Flip-Flops - Home</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            text-align: center;
-            background-color: #f4f4f4;
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
             color: #333;
         }
         header {
-            background: #000;
+            background: linear-gradient(to right, #111, #004d40);
             color: #fff;
+            text-align: center;
             padding: 1em 0;
         }
-        h1 {
+        header h1 {
+            font-family: 'Georgia', serif;
             margin: 0;
+        }
+        nav {
+            background: #333;
+            padding: 0.5em 0;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 1em;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #00bcd4;
+        }
+        .hero {
+            background: url('https://images.unsplash.com/photo-1554774853-28df2f5d5eb6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGpvZG98ZW58MHx8fHwxNjkwMzQwNzM2&ixlib=rb-4.0.3&q=80&w=1080') center/cover no-repeat;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 4px #000;
+        }
+        .hero h2 {
+            margin: 0;
+            font-size: 2.5em;
         }
         section {
             padding: 2em;
+            text-align: center;
+        }
+        .product {
+            display: inline-block;
+            margin: 1em;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            background: white;
+            width: 300px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+        .product h3 {
+            margin: 0;
+            padding: 0.5em;
+            background: #004d40;
+            color: white;
+        }
+        .product p {
+            margin: 0;
+            padding: 0.5em;
         }
         footer {
-            background: #333;
-            color: #fff;
+            background: #111;
+            color: white;
+            text-align: center;
             padding: 1em 0;
-            margin-top: 2em;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Akuma Grip</h1>
+        <h1>Dojo Flip-Flops</h1>
+        <p>The perfect footwear for every BJJ and Judo enthusiast.</p>
     </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="hero">
+        <h2>Step into Tradition</h2>
+    </div>
     <section>
-        <p>Your ultimate grip for Brazilian Jiu-Jitsu!</p>
+        <h2>Our Collection</h2>
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1565182999561-9e84baff1fd3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDd8fGZsaXAtZmxvcHN8ZW58MHx8fHwxNjkwMzQyMzky&ixlib=rb-4.0.3&q=80&w=400" alt="Tatami Flip-Flops">
+            <h3>Tatami Flip-Flops</h3>
+            <p>Inspired by traditional Japanese tatami mats. Perfect for dojo use.</p>
+        </div>
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1610039497617-77c6e7e6b33c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDZ8fGZsaXAtZmxvcHN8ZW58MHx8fHwxNjkwMzQyNDMy&ixlib=rb-4.0.3&q=80&w=400" alt="Brazilian Flip-Flops">
+            <h3>Brazilian Flip-Flops</h3>
+            <p>Lightweight and durable. Perfect for beach or mat-side comfort.</p>
+        </div>
     </section>
     <footer>
-        <p>&copy; 2024 Akuma Grip. All rights reserved.</p>
+        <p>&copy; 2024 Dojo Flip-Flops. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
-
